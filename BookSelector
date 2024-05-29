@@ -1,0 +1,16 @@
+import Foundation
+
+// Define an array of strings
+let stringArray = ["KJV NT", "Catholic Apocrypha", "Being and Nothingness", "Quran", "The Art of War", "Torah", "D&C"]
+
+// Function to randomly select an element from the array
+func getRandomElement(from array: [String]) -> String? {
+    return array.randomElement()
+}
+
+// Main program
+if let randomString = getRandomElement(from: stringArray) {
+    print("Randomly selected string: \(randomString)")
+} else {
+    print("The array is empty.")
+}
